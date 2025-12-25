@@ -2,9 +2,9 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "bun run build:web",
   "devCommand": "bun run dev:web",
-  "installCommand": "bun install",
+  "installCommand": "bun install --legacy-peer-deps",
   "outputDirectory": "apps/web/.next",
-  "framework": "nextjs",
+  "framework": "nextjs"
   "regions": ["iad1"],
   "functions": {
     "apps/web/**/*.ts": {
