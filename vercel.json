@@ -1,4 +1,14 @@
 {
-  "buildCommand": "bun run build",
-  "installCommand": "npx bun@1.2.23 install"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "bun run build:web",
+  "devCommand": "bun run dev:web",
+  "installCommand": "bun install",
+  "outputDirectory": "apps/web/.next",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "functions": {
+    "apps/web/**/*.ts": {
+      "maxDuration": 60
+    }
+  }
 }
